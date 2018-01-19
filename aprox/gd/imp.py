@@ -1,6 +1,10 @@
 import numpy as np
 import pandas as pd
+from time import time
+from scipy.stats import logistic
 
+
+#logistic.cdf(1)=
 def sigmoid(linpred):
     return 1 / (1 + np.exp(-linpred))
 
@@ -138,7 +142,7 @@ def lpr3(features, y, num_steps, learning_rate, add_intercept=False):
     return coef, delta
 
 
-data = pd.read_csv("~/Dropbox/lrgd/dat3.csv")
+data = pd.read_csv("~/binreg/datasets/d5000/dtrain.csv")
 
 x1 = data['x1']
 x2 = data['x2']
@@ -146,7 +150,11 @@ features = np.vstack((x1, x2))
 features = features.T
 y = data['y']
 
+timelpr3 = 0.0
+timeup = time()
 weights = lpr3(features, y,  num_steps = 300000, learning_rate = 5e-5, add_intercept=True)
+timelpr3 += (time() - timeup)
+print timelpr3
 print weights
 
 #intercept = np.ones((features.shape[0], 1))
@@ -154,12 +162,15 @@ print weights
 #coef = weights[0]
 #lamb = np.exp(weights[1])
 #preds = sigmoid(np.dot(X, coef))**lamb
-coeftrue= np.array([0.5,1.0,1.0])
-lambtrue=5
-predstrue = sigmoid(np.dot(X, coeftrue))**lambtrue
+#coeftrue= np.array([0.5,1.0,1.0])
+#lambtrue=5
+#predstrue = sigmoid(np.dot(X, coeftrue))**lambtrue
 
 #from sklearn.metrics import roc_auc_score
 #roc_auc_score(y, preds)
+timelr = 0.0
+timeup = time()
 wlr = logistic_regression(features, y, num_steps = 300000, learning_rate = 5e-5, add_intercept=True)
-predlr = sigmoid(np.dot(X, coef))
+timelr += (time() - timeup)
+#predlr = sigmoid(np.dot(X, coef))
 
