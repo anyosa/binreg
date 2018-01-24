@@ -38,3 +38,7 @@ fit = sm.sampling(data=dat, iter=3000, chains=4, n_jobs = -1)
 time5 += (time() - timeup)
 print time5
 print fit
+#samples = fit.extract(permuted=True)
+#loglamb = samples['loglamb'
+#import matplotlib.pyplot as plt
+#n, bins, patches = plt.hist(loglamb, 50, normed=1, facecolor='green', alpha=0.75)
