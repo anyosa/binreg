@@ -21,3 +21,9 @@ time = append(time, end_time - start_time)
 
 #time without any setup
 #time [1] 13.68233 13.24597 12.94010
+#mc core
+#time[1] 14.902984  7.233172 11.591521
+#doParallel
+#time
+#[1] 14.05746 10.83410 12.62611
+
