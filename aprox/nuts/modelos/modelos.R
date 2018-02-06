@@ -63,7 +63,7 @@ beta_1 ~ normal(0.0,100);
 beta_2 ~ normal(0.0,100);
 loglamb ~ uniform(-2,2);
 for(n in 1:N)
-  y[n] ~ bernoulli(pow(logistic_cdf( beta_0+ beta_1*x1[n]+ beta_2*x2[n]), exp(loglamb)));
+  y[n] ~ bernoulli(pow(logistic_cdf( beta_0+ beta_1*x1[n]+ beta_2*x2[n], 0, 1), exp(loglamb)));
 }
 '
 
@@ -126,6 +126,6 @@ beta_0 ~ normal(0.0,100);
 beta ~ normal(0.0,100);
 loglamb ~ uniform(-2,2);
 for(n in 1:N)
-  y[n] ~ bernoulli(pow(logistic_cdf( beta_0 + X[n]*beta), exp(loglamb)));
+  y[n] ~ bernoulli(pow(logistic_cdf( beta_0 + X[n]*beta, 0 , 1), exp(loglamb)));
 }
 '
