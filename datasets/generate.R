@@ -35,3 +35,6 @@ datcauchy = genpower (n=1000, betavec = c(0.5, 1, 1),lambda = 1, type = "pc")
 
 save(datlogis, file = ("datlogis.rda"))
 save(datcauchy, file = ("datcauchy.rda"))
+
+datlogis10K = genpower (n=10000, betavec = c(0.5, 1, 1),lambda = 1, type = "pl")
+save(datlogis10K, file = ("datlogis10K.rda"))

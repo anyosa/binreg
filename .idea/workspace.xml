@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c3168c5-eeae-4fc7-8bdb-a16d941205d7" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasets/datlogis10k.rda" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aprox/nuts/main.R" afterPath="$PROJECT_DIR$/aprox/nuts/main.R" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aprox/nuts/modelos/modelos.R" afterPath="$PROJECT_DIR$/aprox/nuts/modelos/modelos.R" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datasets/generate.R" afterPath="$PROJECT_DIR$/datasets/generate.R" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,8 +31,8 @@
       <file leaf-file-name="main.R" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/aprox/nuts/main.R">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="38" column="27" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="22" column="84" lean-forward="false" selection-start-line="22" selection-start-column="84" selection-end-line="22" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -40,8 +41,8 @@
       <file leaf-file-name="modelos.R" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aprox/nuts/modelos/modelos.R">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="86" column="44" lean-forward="true" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
+            <state relative-caret-position="1290">
+              <caret line="86" column="44" lean-forward="false" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -50,7 +51,7 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aprox/nuts/pystan/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
+            <state relative-caret-position="240">
               <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -62,7 +63,7 @@
       <file leaf-file-name="imp.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aprox/gd/imp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1830">
+            <state relative-caret-position="1875">
               <caret line="125" column="34" lean-forward="false" selection-start-line="125" selection-start-column="34" selection-end-line="125" selection-end-column="34" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -103,8 +104,8 @@
         <option value="$PROJECT_DIR$/aprox/gd/sk.py" />
         <option value="$PROJECT_DIR$/aprox/nuts/pystan/main.py" />
         <option value="$PROJECT_DIR$/aprox/pred.py" />
-        <option value="$PROJECT_DIR$/aprox/nuts/main.R" />
         <option value="$PROJECT_DIR$/aprox/nuts/modelos/modelos.R" />
+        <option value="$PROJECT_DIR$/aprox/nuts/main.R" />
       </list>
     </option>
   </component>
@@ -176,6 +177,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Changed Files">
           <expand>
@@ -187,7 +189,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -341,7 +342,7 @@
     <frame x="-1" y="0" width="1922" height="1054" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14536741" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14696486" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968238" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33077765" sideWeight="0.42971247" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33077765" sideWeight="0.5702875" order="2" side_tool="false" content_ui="tabs" />
@@ -774,7 +775,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/aprox/gd/imp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1830">
+        <state relative-caret-position="1875">
           <caret line="125" column="34" lean-forward="false" selection-start-line="125" selection-start-column="34" selection-end-line="125" selection-end-column="34" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -791,7 +792,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/aprox/nuts/pystan/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="240">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
@@ -815,16 +816,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/aprox/nuts/modelos/modelos.R">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="86" column="44" lean-forward="true" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
+        <state relative-caret-position="1290">
+          <caret line="86" column="44" lean-forward="false" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/aprox/nuts/main.R">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="38" column="27" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state relative-caret-position="330">
+          <caret line="22" column="84" lean-forward="false" selection-start-line="22" selection-start-column="84" selection-end-line="22" selection-end-column="84" />
           <folding />
         </state>
       </provider>

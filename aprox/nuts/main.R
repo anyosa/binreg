@@ -1,10 +1,11 @@
+library(Rcpp)
 library(rstan)
-load("~/binreg/datasets/datlogis.rda")
+load("~/binreg/datasets/datlogis10K.rda")
 source("~/binreg/aprox/nuts/modelos/modelos.R")
 rstan_options(auto_write = TRUE)
 options(mc.cores = parallel::detectCores())
-data = datlogis
-remove(datlogis)
+data = datlogis10K
+remove(datlogis10K)
 times = c()
 sums = c()
 #5
@@ -12,22 +13,22 @@ dat = list (N = NROW(data),
             x1 =data$x1,
             x2 = data$x2,
             y = data$y)
-for (i in 1:10) {
+for (i in 1:5) {
 start_time= Sys.time()
 fit <- stan(model_code = mod7, data = dat,
              chains = 3, iter = 3000, warmup = 500, thin = 10, cores = 16)
 end_time = Sys.time()
-times = append(times, end_time - start_time)
+times = append(times, as.numeric(end_time - start_time))
 sums = append(sums, summary(fit, pars = c("beta_0", "beta_1", "beta_2", "loglamb"))$summary)
 }
-save(list=c("times", "sums"), file="/home/ubuntu/binreg/aprox/nuts/rstan/objects/mod7.rda")
+save(list=c("times", "sums"), file="/home/ubuntu/binreg/aprox/nuts/rstan/objects/mod7_10K.rda")
 
 #time_mod5
 
 
 #matrix forms
 library(rstan)
-load("~/binreg/datasets/datlogis.rda")
+load("~/binreg/datasets/datlogis10K.rda")
 source("~/binreg/aprox/nuts/modelos/modelos.R")
 rstan_options(auto_write = TRUE)
 options(mc.cores = parallel::detectCores())
