@@ -19,7 +19,7 @@ def genpcauchy(n, betavec, shape):
 dat = genpcauchy(1000, np.array([-3.7,-0.51,11.2]), shape = 2.6)
 dat.mean(axis =0)
 
-
+np.savetxt("datcauchy.csv", dat, delimiter=",")
 
 
 
