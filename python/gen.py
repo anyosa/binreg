@@ -14,12 +14,12 @@ def genpcauchy(n, betavec, shape):
     X = np.column_stack((x1,x2))
     prob = pcauchy(beta0 + np.dot(beta,X.T), 0, 1, shape)
     y = scipy.stats.bernoulli.rvs(p = prob)
-    return np.column_stack((X,y))
+    return np.column_stack((X,y.astype(int)))
 
-dat = genpcauchy(1000, np.array([-3.7,-0.51,11.2]), shape = 2.6)
-dat.mean(axis =0)
+#dat = genpcauchy(1000, np.array([-3.7,-0.51,11.2]), shape = 2.6)
+#dat.mean(axis =0)
 
-np.savetxt("dat.csv", dat, delimiter=",")
+#np.savetxt("dat.csv", dat, delimiter=",")
 
 
 

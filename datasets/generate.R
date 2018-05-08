@@ -17,7 +17,7 @@ genpower <- function(n,betavec,lambda,type){
   #beta1 = betavec[2]
   #beta2 = betavec[3]
   beta = betavec[-1]
-  set.seed(123)
+  #set.seed(123)
   x1 = runif(n, -2, 2)
   x2 = rnorm(n, 0, 1)
   X = as.matrix(cbind(x1,x2))
